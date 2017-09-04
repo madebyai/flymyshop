@@ -5,7 +5,8 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\User;
 use Auth;
-use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Request;
 use Socialite;
@@ -24,7 +25,7 @@ class AuthController extends Controller
     |
     */
 
-    use AuthenticatesAndRegistersUsers, ThrottlesLogins;
+    use AuthenticatesUsers, RegistersUsers, ThrottlesLogins;
 
     /**
      * Where to redirect users after login / registration.
@@ -35,8 +36,6 @@ class AuthController extends Controller
 
     /**
      * Create a new authentication controller instance.
-     *
-     * @return void
      */
     public function __construct()
     {
