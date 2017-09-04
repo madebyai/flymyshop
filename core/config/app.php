@@ -165,7 +165,7 @@ return [
         \Torann\Currency\CurrencyServiceProvider::class,
         Greggilbert\Recaptcha\RecaptchaServiceProvider::class,
         Laravel\Socialite\SocialiteServiceProvider::class,
-
+        Laravel\Tinker\TinkerServiceProvider::class,
 
         /*
          * Application Service Providers...
