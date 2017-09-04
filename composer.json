@@ -15,7 +15,7 @@
         "guzzlehttp/guzzle": "~6.0",
         "league/oauth2-client": "1.4.*",
         "gloudemans/shoppingcart":"2.2.*",
-        "laravel/cashier": "~6.0",
+        "laravel/cashier": "~7.0",
         "dompdf/dompdf":"0.7.*",
         "torann/currency":"0.3.*",
         "greggilbert/recaptcha":"2.1.*",
