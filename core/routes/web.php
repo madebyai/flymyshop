@@ -117,7 +117,7 @@ Route::group(
         Route::post('remove_from_cart', 'ShopController@removeFromCart');
         Route::auth();
         Route::get('pages/{title}/{page_id}', 'ShopController@page');
-        Route::get('auth/facebook', 'Auth\AuthController@redirectToProvider');
-        Route::get('auth/facebook/callback', 'Auth\AuthController@handleProviderCallback');
+        Route::get('auth/facebook', 'Auth\LoginController@redirectToProvider');
+        Route::get('auth/facebook/callback', 'Auth\LoginController@handleProviderCallback');
     }
 );
