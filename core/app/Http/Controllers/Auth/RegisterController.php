@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\User;
-use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Validator;
@@ -22,7 +21,7 @@ class RegisterController extends Controller
     |
     */
 
-    use AuthenticatesUsers, RegistersUsers, ThrottlesLogins;
+    use RegistersUsers, ThrottlesLogins;
 
     /**
      * Where to redirect users after login / registration.
