@@ -83,10 +83,14 @@ class RecreateCurrencyTable extends Migration
             $table->timestamps();
         });
 
+        // Add currencies
         Artisan::call('currency:manage', [
             'action' => 'add',
             'currency' => implode(',', $this->currencies_to_add)
         ]);
+
+        // Update rates
+        Artisan::call('currency:update');
     }
 
     /**
